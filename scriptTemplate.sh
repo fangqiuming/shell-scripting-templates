@@ -10,7 +10,7 @@ _mainScript_() {
   # Script specific
 
   # Common
-    LOGFILE="${HOME}/logs/$(basename "$0").log"
+    LOGFILE="$HOME/Library/Logs/$(basename "$0").log"
     QUIET=false
     LOGLEVEL=ERROR
     VERBOSE=false
@@ -377,7 +377,7 @@ _usage_() {
   ${bold}Options:${reset}
     -h, --help              Display this help and exit
     --loglevel [LEVEL]      One of: FATAL, ERROR, WARN, INFO, DEBUG, ALL, OFF  (Default is 'ERROR')
-    --logfile [FILE]        Full PATH to logfile.  (Default is '${HOME}/logs/$(basename "$0").log')
+    --logfile [FILE]        Full PATH to logfile.  (Default is '$HOME/Library/Logs/$(basename "$0").log')
     -n, --dryrun            Non-destructive. Makes no permanent changes.
     -q, --quiet             Quiet (no output)
     -v, --verbose           Output more information. (Items echoed to 'verbose')
